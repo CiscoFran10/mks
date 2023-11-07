@@ -1,17 +1,15 @@
-/**
- * @jest-environment jsdom
- */
-import { render, screen } from '@testing-library/react'
-import Home from '@/pages/index'
+import React from 'react';
+import Home from '../src/app/page';
+import { render, screen } from '@testing-library/react';
 
 describe('Home', () => {
   it('renders a heading', () => {
-    render(<Home />)
+    render(<Home />);
 
     const heading = screen.getByRole('heading', {
-      name: /welcome to next\.js!/i,
-    })
+      name: /mks/i,
+    });
 
-    expect(heading).toBeInTheDocument()
-  })
-})
+    expect(heading).toBeInTheDocument();
+  });
+});
