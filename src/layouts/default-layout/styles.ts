@@ -8,13 +8,13 @@ export const AppContainer = styled.div`
 `;
 
 export const MainContainer = styled.main`
-  max-width: 56.5rem;
-  margin: 1.125rem auto;
-  padding: 0 3.875rem;
+  width: 100%;
+  max-width: calc(60rem + 1.125rem);
+  margin: 0 auto;
+  padding: 1.125rem 3.875rem;
   flex: 1;
 
   @media (min-width: 768px) {
-    margin: 6.25rem auto;
-    padding: 0;
+    padding: 6.25rem 1.25rem;
   }
 `;
