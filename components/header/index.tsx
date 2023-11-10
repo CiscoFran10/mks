@@ -1,6 +1,6 @@
 import React from 'react';
-import CartIndicator from './cart-indicator';
 import { HeaderContainer, Logo } from './styles';
+import CartIndicator from './cart-indicator';
 
 const Header = () => {
   return (

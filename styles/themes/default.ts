@@ -8,6 +8,7 @@ export const defaultTheme = {
   'gray-800': '#2C2C2C',
   'gray-900': '#373737',
 
+  'blue-700': '#60a5fa',
   'blue-800': '#2563eb',
   'blue-900': '#0F52BA',
 };

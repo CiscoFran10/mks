@@ -24,6 +24,15 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 1rem;
   }
 
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  ul,li {
+    list-style: none;
+  }
+
   button {
     border: 0;
     cursor: pointer;
