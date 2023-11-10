@@ -5,6 +5,7 @@
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
+    "types": ["node", "jest", "@testing-library/jest-dom"],
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -14,10 +15,13 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": "./src", // Update the baseUrl to point to your 'src' folder
+    "baseUrl": ".",
     "paths": {
       "@/components/*": ["components/*"],
-      "@/styles/*": ["styles/*"]
+      "@/app/*": ["app/*"],
+      "@/contexts/*": ["contexts/*"],
+      "@/styles/*": ["styles/*"],
+      "@/lib/*": ["lib/*"]
     },
     "plugins": [
       {
@@ -27,8 +31,8 @@
   },
   "include": [
     "next-env.d.ts",
-    "src/**/*.ts", // Update the include paths to start from 'src' folder
-    "src/**/*.tsx",
+    "**/*.ts",
+    "**/*.tsx",
     "types.d.ts",
     ".next/types/**/*.ts"
   ],
