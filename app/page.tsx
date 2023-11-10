@@ -14,7 +14,7 @@ export interface ProductData {
   count: number;
 }
 
-export const fakeProducts = Array.from({ length: 8 }, (_, index) => index + 1);
+const fakeProducts = Array.from({ length: 8 }, (_, index) => index + 1);
 
 const Home = () => {
   const { data, isLoading, isError } = useQuery<ProductData>(
